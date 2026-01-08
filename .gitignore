@@ -1,0 +1,36 @@
+# Worlds
+data/world/
+data/world_nether/
+data/world_the_end/
+
+# Logs
+data/logs/
+
+# Runtime / cache
+data/cache/
+data/libraries/
+data/versions/
+
+# Player & server state
+data/playerdata/
+data/usercache.json
+data/whitelist.json
+data/ops.json
+data/banned-players.json
+data/banned-ips.json
+
+# Plugin generated data
+data/plugins/*/
+!data/plugins/*.jar
+
+# Locks / instance-specific
+data/session.lock
+data/uid.dat
+data/version_history.json
+data/eula.txt
+
+# OS / editor
+.DS_Store
+*.swp
+.idea
+.vscode

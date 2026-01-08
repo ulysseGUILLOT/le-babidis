@@ -1,0 +1,20 @@
+services:
+  purpur:
+    image: eclipse-temurin:17-jre
+    container_name: minecraft-purpur
+    working_dir: /server
+    stdin_open: true
+    tty: true
+
+    ports:
+      - "25565:25565"
+
+    volumes:
+      - ./data:/server
+
+    # équivalent de: java -Xmx8192M -Xms8192M -jar purpur-1.19.4-1985.jar nogui
+    command: >
+      java -Xms8192M -Xmx8192M
+      -jar purpur-1.19.4-1985.jar nogui
+
+    restart: unless-stopped
